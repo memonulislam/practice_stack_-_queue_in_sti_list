@@ -21,5 +21,17 @@ int main()
         s1.pop();
     }
 
+    while (!s2.empty())
+    {
+        s2.push(s1.top());
+        s1.pop();
+    }
+
+    while (!s2.empty())
+    {
+        cout << s2.top() << " ";
+        s2.pop();
+    }
+
     return 0;
 }
