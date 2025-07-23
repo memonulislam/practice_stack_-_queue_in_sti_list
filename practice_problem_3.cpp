@@ -8,7 +8,7 @@ int main()
     int n;
     cin >> n;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; ++i)
     {
         int val;
         cin >> val;
@@ -17,17 +17,11 @@ int main()
 
     while (!s1.empty())
     {
-        s1.push(s1.top());
-        s1.pop();
-    }
-
-    while (!s2.empty())
-    {
         s2.push(s1.top());
         s1.pop();
     }
 
-    while (!s2.empty())
+        while (!s2.empty())
     {
         cout << s2.top() << " ";
         s2.pop();
